@@ -11,6 +11,9 @@
     *   [应用版本获取](#AppVersionHelper)
     *   [屏幕分辨率相关](#UiHelper)
     *   [字符串处理工具](#StringUtils)
+    *   [网络环境判断](#AppNetworkInfo)
+    *   [MD5加密](#MD5)
+    *   [时间操作](#DateUtil)
 
 
 
@@ -64,6 +67,26 @@ AppVersionHelper.getVersionCode(context);
 ```
 StringUtils.isEmpty(str);
 ```
+
+<h3 id="AppNetworkInfo">AppNetworkInfo</h3>
+> 网络环境 & GPS判断 & 检查手机上是否安装了指定的软件
+
+
+<h3 id="MD5">MD5</h3>
+> MD5加密
+
+```
+//替换default key
+MD5.KEY = newKey;
+//加密字符串
+MD5.getMD5KeyStr(str);
+```
+
+
+<h3 id="DateUtil">DateUtil</h3>
+> 时间操作转换类
+
+
 
 
 
