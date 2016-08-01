@@ -44,7 +44,7 @@ dependencies {
 <h3 id="SharedPreferencesHelper">SharedPreferencesHelper</h3>
 > SharedPreferences缓存帮助类
 
-```
+```java
 //Application中注册
 SharedPreferencesHelper sph = SharedPreferencesHelper.getInstance();
 sph.Builder(context);
@@ -54,7 +54,7 @@ sph.Builder(context);
 <h3 id="AppVersionHelper">AppVersionHelper</h3>
 > 获取app版本号和版本名称
 
-```
+```java
 AppVersionHelper.getVersionName(context);
 AppVersionHelper.getVersionCode(context);
 ```
@@ -66,7 +66,7 @@ AppVersionHelper.getVersionCode(context);
 <h3 id="StringUtils">StringUtils</h3>
 > 字符串处理工具
 
-```
+```java
 StringUtils.isEmpty(str);
 ```
 
@@ -77,7 +77,7 @@ StringUtils.isEmpty(str);
 <h3 id="MD5">MD5</h3>
 > MD5加密
 
-```
+```java
 //替换default key
 MD5.KEY = newKey;
 //加密字符串
@@ -95,11 +95,15 @@ MD5.getMD5KeyStr(str);
 <h3 id="ProportionImageView">ProportionImageView</h3>
 > 动态宽高比ImageView
 
+* 布局文件根节点添加
+```xml
+<xmlns:app="http://schemas.android.com/apk/res-auto">
 ```
-// 布局文件根节点添加
-xmlns:app="http://schemas.android.com/apk/res-auto"
-// 默认比例1:1
-// 使用控件 app:proportion
+
+* 默认比例1:1
+* 使用控件 app:proportion
+
+```xml
 <com.ithooks.hooksutils.widget.ProportionImageView
 	android:layout_width="0dp"
 	android:layout_weight="1"
@@ -107,7 +111,6 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:scaleType="centerCrop"
 	app:proportion="0.87"
 	android:src="@drawable/abc"/>
-
 ```
 
 
