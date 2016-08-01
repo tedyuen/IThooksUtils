@@ -1,14 +1,16 @@
 # Android开发工具包 #
 ![I.T.Hooks icon](http://www.ithooks.com/images/index_logo_img.png)
-[上海铁钩信息科技](http://www.ithooks.com)
+> [上海铁钩信息科技](http://www.ithooks.com)
 
 ================
 
 # 目录
 *   [使用](#use)
-*   [common](#common)
-    *   [SharedPreferencesHelper](#SharedPreferencesHelper)
-    *   [AppVersionHelper](#AppVersionHelper)
+*   [common包](#common)
+    *   [SharedPreferences缓存管理](#SharedPreferencesHelper)
+    *   [应用版本获取](#AppVersionHelper)
+    *   [屏幕分辨率相关](#UiHelper)
+    *   [字符串处理工具](#StringUtils)
 
 
 
@@ -40,14 +42,28 @@ dependencies {
 ```
 //Application中注册
 SharedPreferencesHelper sph = SharedPreferencesHelper.getInstance();
-        sph.Builder(context);
+sph.Builder(context);
 ```
 
 
 <h3 id="AppVersionHelper">AppVersionHelper</h3>
 > 获取app版本号和版本名称
+
 ```
 AppVersionHelper.getVersionName(context);
 AppVersionHelper.getVersionCode(context);
 ```
+
+<h3 id="UiHelper">UiHelper</h3>
+> 屏幕分辨率转化、宽高数值获取
+
+
+<h3 id="StringUtils">StringUtils</h3>
+> 字符串处理工具
+
+```
+StringUtils.isEmpty(str);
+```
+
+
 
