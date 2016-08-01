@@ -21,7 +21,7 @@
 
 <h2 id="use">使用</h2>
 **build.gradle**中添加
-```
+```gradle
 allprojects {
     repositories {
         jcenter()
