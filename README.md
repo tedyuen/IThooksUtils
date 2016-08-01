@@ -14,6 +14,8 @@
     *   [网络环境判断](#AppNetworkInfo)
     *   [MD5加密](#MD5)
     *   [时间操作](#DateUtil)
+*   [widget包](#widget)
+    *   [动态宽高比ImageView](#ProportionImageView)
 
 
 
@@ -37,7 +39,7 @@ dependencies {
 ```
 
 
-<h2 id="common">common</h2>
+<h2 id="common">common包</h2>
 
 <h3 id="SharedPreferencesHelper">SharedPreferencesHelper</h3>
 > SharedPreferences缓存帮助类
@@ -87,6 +89,26 @@ MD5.getMD5KeyStr(str);
 > 时间操作转换类
 
 
+
+
+<h2 id="widget">widget包</h2>
+<h3 id="ProportionImageView">ProportionImageView</h3>
+> 动态宽高比ImageView
+
+```
+// 布局文件根节点添加
+xmlns:app="http://schemas.android.com/apk/res-auto"
+// 默认比例1:1
+// 使用控件 app:proportion
+<com.ithooks.hooksutils.widget.ProportionImageView
+	android:layout_width="0dp"
+	android:layout_weight="1"
+	android:layout_height="wrap_content"
+	android:scaleType="centerCrop"
+	app:proportion="0.87"
+	android:src="@drawable/abc"/>
+
+```
 
 
 
