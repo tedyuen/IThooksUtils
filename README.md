@@ -4,7 +4,8 @@
 
 #使用
 **build.gradle**中添加
-```allprojects {
+```
+allprojects {
     repositories {
         jcenter()
         maven { url "https://jitpack.io" }
